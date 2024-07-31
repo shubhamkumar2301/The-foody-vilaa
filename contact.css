@@ -1,0 +1,309 @@
+* {
+    margin: 0;
+    font-family: arial;
+    border: border-box;
+}
+
+body {
+    margin: 0px 115px;
+}
+.navbar{
+    height: 150px;
+    /* border-bottom: 1px solid  rgb(165, 163, 163); */
+    padding-bottom: 40px;
+    position: sticky !important;
+    top: 0 !important;
+   z-index: 1;
+   background-color: #fff;
+}
+
+.logo-section {
+    display: flex;
+    margin: 0px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+}
+
+.logo-section img {
+    width: 10rem;
+    margin-bottom: 20px;
+    height: 100px;
+    margin-left: 10px;
+}
+.all{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 6px;
+    cursor: pointer;
+}
+
+.search {
+    display: flex;
+    gap: 3px;
+    background-color: #f4f6f8;
+    padding: px 30px;
+    border: 0.15px solid rgb(165, 163, 163);
+    border-radius: 4px;
+    width: 900px;
+    height: 80px;
+}
+.A{
+    margin-bottom: 15px;
+}
+
+.search-select {
+    background-color: #f3f3f3;
+    width: 10px;
+    text-align: center;
+    font-size: 18px;
+    border: none;
+   height: 20px;
+}
+
+.search div {
+    font-size: 20px;
+    justify-items: center;
+}
+i{
+    width: 20px;
+    height: 10px;
+    text-align: center;
+}
+input.inp{
+    width: 1000px;
+    padding: 15px;
+    font-size: 20px;
+    background-color:  #f4f6f8;
+    border: 4px solid white;
+    border: none;
+}
+
+.s-logo{
+    width: 35px;
+    text-align: center;
+    justify-content: center;
+    margin-top: 25px;
+    color: black;
+    cursor: pointer;
+}
+.s-logo:hover{
+    color: green;
+}
+.inp:focus {
+    outline: none;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    font-size: 25px;
+    width: 6px;
+    margin-right: 170px;
+}
+a i{
+    color: black;
+}
+
+.icons i:hover{
+    color: green;
+}
+
+.link-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    width: 100%;
+}
+
+.links {
+    margin-top: 0;
+    margin-left: 60px;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.links a:hover{
+color: green;
+}
+
+.recent {
+    margin-top: 11px;
+    margin-right: 65px;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+.recent:hover {
+    color: green;
+    cursor: pointer;
+}
+
+
+
+.address {
+    width: 800px;
+    padding-top: 30px;
+    text-align: left;
+    display: flex;
+}
+
+#h1-heading {
+    font-size: large;
+}
+
+#h2-heading {
+    font-size: medium;
+}
+
+pre {
+    font-size: small;
+}
+
+.row {
+    display: flex;
+}
+
+.timing {
+    margin-left: 65px;
+}
+
+#para-timing {
+    font-size: 10px;
+    padding-top: 10px;
+}
+
+.form-container {
+    height: 450px;
+    width: 50%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f5f8fb;
+    position: relative;
+}
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    padding: 8px;
+    margin: 15px 0px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+button {
+    background-color: rgb(56, 231, 56);
+    padding-right: 10px;
+    padding-bottom: 10px;
+    right: 20px;
+    bottom: 20px;
+    border: none;
+    position: absolute;
+    border-radius: 5px;
+    color: white;
+}
+
+#home {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.address-header {
+    display: flex;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.address-header i {
+    color: rgb(37, 214, 37);
+}
+
+.details a:hover,
+i:hover {
+    color: green;
+}
+
+.details a {
+    font-size: small;
+    color: black;
+    text-decoration: none;
+}
+
+.store-address {
+    display: flex;
+    width: 400px;
+    padding-top: 10px;
+}
+
+.details {
+    padding-top: 10px;
+}
+
+.desc {
+    display: flex;
+    padding-top: 100px;
+}
+
+.useful-links {
+    list-style-type: none;
+    padding-top: 20px;
+}
+
+.useful-links a {
+    color: black;
+    text-decoration: none;
+    font-size: small;
+}
+
+.useful-links a:hover {
+    color: green;
+    cursor: pointer;
+}
+
+.usefulLink {
+    width: 175px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.useful-links li {
+    margin-bottom: 20px;
+    font-size: small;
+}
+
+.copyright {
+    display: flex;
+    font-size: small;
+    color: grey;
+    padding-top: 20px;
+}
+
+.details i:hover {
+    cursor: pointer;
+}
+
+#contact {
+    padding-top: 30px;
+}

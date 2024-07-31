@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="data:image/png;base64,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">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>The Food Villa</title>
+</head>
+<body class="body">
+   <div class="navbar">
+    <section class="logo-section">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMkML6BRWil3kliTdFT-6LYBEeRsnkd_hmMNAowM3oalP-VbwLnT7vvG70rlP2_gcxbd0&usqp=CAU" alt="" class="logo">
+            <div class="search">
+                <div class="all">All<i class="fa-solid fa-angle-down"></i> </div>
+                <input data-style="right" class="inp" type="text" name="" id="" placeholder="what are you shoping for?">
+                <div class="s-logo"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+            <div class="icons">
+               <a href=""><i class="fa-regular fa-heart"></i></a> 
+               <a href="user.html"><i class="fa-solid fa-user"></i></a> 
+               <a href=""><i class="fa-solid fa-cart-shopping"></i></a> 
+            </div>
+    </section>
+    <section class="link-section">
+        <div class="links">
+            <a class="home" style="color:green;" href="index.html">Home</a>
+            <a href="Aboutus.html">About Us</a>
+            <a href="Contact.html">Contact Us</a>
+            <a href="shop.html">Shop</a>
+        </div>
+        <div class="recent">Recent Viewed Product <i class="fa-solid fa-angle-down"></i></div>
+    </section>
+   </div>
+
+   <div id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="carousel-caption d-none d-md-block heading">Best Destination For Grocery Shopping</div>
+        <img src="https://kiranastore.co.in/wp-content/uploads/2022/03/slide-grocery-new.jpg" class="d-block w-100 c-img" alt="...">
+        <div class="carousel-caption d-none d-md-block"><button  class="btn btn-warning"> <a href="shop.html"> Shop Now</a></button> </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+    <!-- FEATURED SECTION -->
+      <section>
+        <div class="see-all">
+          <h2>Featured Categories <a href="shop.html"> see all
+            <i class="fa-solid fa-chevron-right"></i>
+          </a> </h2>
+        </div>
+        <div class="featured" >
+          <div class="featured-card">
+              <a href="#">
+                  <img src="https://kiranastore.co.in/wp-content/uploads/2024/05/item-2923-qr5hqhcxjw.jpg" alt="">
+                  <p>Mantra Masoor Dal Pack</p>
+              </a>
+  
+          </div>
+           <div class="featured-card">
+                  <a href="#">
+                      <img src="https://kiranastore.co.in/wp-content/uploads/2024/05/item-2925-SBMmclVmKo.jpg">
+                      <p>Mantra Peanut Pack </p>
+                  </a>
+              
+          </div>
+          <div class="featured-card">
+            <a href="#">
+                <img src="https://kiranastore.co.in/wp-content/uploads/2022/03/rajma.jpg">
+                <p>Flours & grains</p>
+            </a>
+        
+          </div>
+          <div class="featured-card">
+            <a href="#">
+            <img src="https://kiranastore.co.in/wp-content/uploads/2022/03/walnuts.jpg">
+            <p>Nuts</p>
+          </a>
+  
+         </div>
+         <div class="featured-card">
+           <a href="#">
+           <img src="https://kiranastore.co.in/wp-content/uploads/2022/03/Goldwinner-sunflower-oil-jar.jpg">
+           <p>Oil/Spices & pickles</p>
+           </a>
+
+         </div>
+         <div class="featured-card">
+         <a href="#">
+         <img src="https://kiranastore.co.in/wp-content/uploads/2022/03/jaggery-powder.jpg">
+         <p>Salt & sugar</p>
+         </a>
+
+        </div>
+      </div>
+      
+      </section>
+
+     <!--footer section-->
+      <footer class="footer">
+        <div class="desc">
+            <div class="store-details">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMkML6BRWil3kliTdFT-6LYBEeRsnkd_hmMNAowM3oalP-VbwLnT7vvG70rlP2_gcxbd0&usqp=CAU" alt="the food villa" height="190px" width="340px">
+                <p style="font-weight: 200; margin-left: 30px;">Jaganmayi Enterprises</p>
+                <div class="details">
+                    <i style="font-size:small; margin-left: 30px;" class="fa-solid fa-phone"></i>
+                    <a class="phone" href="#phone">+91-8123183275</a>
+                </div>
+                <div class="details">
+                    <i style="font-size:small;margin-left: 30px;" class="fa-regular fa-envelope"></i>
+                    <a class="mail" href="#email">support@kiranastore.co.in</a>
+                </div>
+                <div class="store-address">
+                    <i style="font-size:small;margin-left: 30px;" class="fa-solid fa-house"></i>
+                    <p style="font-size:small;margin-left: 30px;">Flat no. - 16,Ground Floor,Dwarakanagar, Near PES Institute of management Bangalore, Hosakerehalli, Bengeluru, Bengaluru Urban, karnataka-560085</p>
+                </div>
+            </div>
+            <div class="usefulLink">
+                <ul class="useful-links">
+                    <li>
+                        <p style="font-size:medium">Useful Links</p>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Terms & Conditions</a></li>
+                    <li><a href="">Refund & Cancellation Policy</a></li>
+                    <li><a href="">Shipping & Delivery Policy</a></li>
+                    <li><a href="">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <i class="fa-regular fa-copyright"></i>
+            <p> 2024. All rights reserved.</p>
+        </div>
+
+    </footer>
+    
+    
+
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
